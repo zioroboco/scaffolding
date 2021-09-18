@@ -1,0 +1,28 @@
+{
+  "name": "@zioroboco/generator-generator",
+  "version": "0.0.0",
+  "author": "Louis Quinnell <_@ziorobo.co>",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zioroboco/scaffolding.git",
+    "directory": "packages/generator-generator"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "main": "generators/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "yeoman-test": "^1.7.0",
+    "yeoman-assert": "^3.1.1",
+    "jest": "^26.1.0"
+  },
+  "dependencies": {
+    "yeoman-generator": "^3.1.1",
+    "chalk": "^2.1.0",
+    "yosay": "^2.0.2"
+  }
+}
