@@ -1,0 +1,9 @@
+{
+  "version": "0.0.0-unversioned",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {},
+  "dependencies": {}
+}
