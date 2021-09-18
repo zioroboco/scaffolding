@@ -333,15 +333,6 @@
     "@manypkg/get-packages" "^1.0.1"
     semver "^5.4.1"
 
-"@changesets/changelog-github@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@changesets/changelog-github/-/changelog-github-0.4.1.tgz#880cb624477972ea103abf6942cf4ee3106f682b"
-  integrity sha512-WK9DzS3i0wa2doEnOr4sm/FMnNtxzCCAKP7dEcWvhYkgXYX5R6jmfHAcDstmjAhiuvbhoHYom4MOC1tIzgwnfA==
-  dependencies:
-    "@changesets/get-github-info" "^0.5.0"
-    "@changesets/types" "^4.0.1"
-    dotenv "^8.1.0"
-
 "@changesets/cli@^2.17.0":
   version "2.17.0"
   resolved "https://registry.yarnpkg.com/@changesets/cli/-/cli-2.17.0.tgz#cc7ff4f64d029ddd6d87020a012c8cf8c7adde58"
@@ -919,6 +910,15 @@
   integrity sha512-yEJzHoxf6SyQGhBhIYGXQDSCkJjB6HohDShto7m8vaKg9Yp0Yn8+71J9eakh2bnPg6BfsH9PRMhiRTZnd4eXGQ==
   dependencies:
     "@types/yargs-parser" "*"
+
+"@zioroboco/changelog-github@^0.1.0":
+  version "0.1.0"
+  resolved "https://npm.pkg.github.com/download/@zioroboco/changelog-github/0.1.0/98727eb59c21e8a1912d77bed2c0ffbaaebd692d7e3fff41ff184382459f11eb#2735fdf2d38994557b9f5091062661e048d660b8"
+  integrity sha512-bvfNZ1+PJrUmGoat+xWy1v6yiYjIcFXUCe1TWN5aE+z9NfWIpMZWbu2DuQfXfWkwuP9dQUal/25YHXaatzlFIw==
+  dependencies:
+    "@changesets/get-github-info" "^0.5.0"
+    "@changesets/types" "^4.0.1"
+    dotenv "^8.1.0"
 
 JSONStream@^1.2.1, JSONStream@^1.3.5:
   version "1.3.5"
