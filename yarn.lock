@@ -911,10 +911,10 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@zioroboco/changelog-github@^0.1.0":
-  version "0.1.0"
-  resolved "https://npm.pkg.github.com/download/@zioroboco/changelog-github/0.1.0/98727eb59c21e8a1912d77bed2c0ffbaaebd692d7e3fff41ff184382459f11eb#2735fdf2d38994557b9f5091062661e048d660b8"
-  integrity sha512-bvfNZ1+PJrUmGoat+xWy1v6yiYjIcFXUCe1TWN5aE+z9NfWIpMZWbu2DuQfXfWkwuP9dQUal/25YHXaatzlFIw==
+"@zioroboco/changelog-github@^0.1.1":
+  version "0.1.1"
+  resolved "https://npm.pkg.github.com/download/@zioroboco/changelog-github/0.1.1/2f213efd8757b0a0cb487e8d3941a1f2eebe54ba97b26316e043997c0210b5e6#a4778e064db09b0e5746f7daef95bb4a15ac8126"
+  integrity sha512-3QKKsBaWvRtg8CAsD06BehKzjkj1WJGmAGts9zq3LKSkETY8o+Nj1kGB5T/kbyPGZhjzxUgU4aaNXM6iXDFDUQ==
   dependencies:
     "@changesets/get-github-info" "^0.5.0"
     "@changesets/types" "^4.0.1"
