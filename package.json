@@ -4,6 +4,7 @@
     "packages/*"
   ],
   "scripts": {
+    "test": "jest",
     "release": "changeset publish"
   },
   "dependencies": {
