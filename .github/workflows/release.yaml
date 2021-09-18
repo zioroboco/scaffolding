@@ -18,7 +18,9 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           cache: yarn
 
-      - run: yarn install --immutable
+      - run: yarn install --immutable --ignore-scripts
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: changesets/action@c3d88279fd9abe11410de073005e34863f735b1c
         with:
