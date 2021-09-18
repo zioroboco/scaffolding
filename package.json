@@ -4,5 +4,7 @@
     "packages/*"
   ],
   "scripts": {},
-  "dependencies": {}
+  "dependencies": {
+    "@changesets/cli": "^2.17.0"
+  }
 }
