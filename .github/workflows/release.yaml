@@ -1,0 +1,37 @@
+name: release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            @zioroboco:registry=https://npm.pkg.github.com/
+            //registry.npmjs.org/:_authToken=$GITHUB_TOKEN
+          EOF
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+          cache: yarn
+
+      - run: yarn install --immutable
+
+      - uses: changesets/action@c3d88279fd9abe11410de073005e34863f735b1c
+        with:
+          commit: Version packages
+          title: Version packages
+          publish: yarn release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
