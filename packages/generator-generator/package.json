@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zioroboo/generators.git",
+    "url": "https://github.com/zioroboo/scaffold.git",
     "directory": "packages/generator-generator"
   },
   "main": "generators/index.js",
