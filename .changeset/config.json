@@ -1,6 +1,9 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@1.6.1/schema.json",
-  "changelog": "@changesets/cli/changelog",
+  "changelog": [
+    "@zioroboco/changelog-github",
+    { "repo": "zioroboco/scaffolding" }
+  ],
   "commit": false,
   "linked": [],
   "access": "restricted",
