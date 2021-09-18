@@ -1,0 +1,27 @@
+name: ci
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            @zioroboco:registry=https://npm.pkg.github.com/
+            //registry.npmjs.org/:_authToken=$GITHUB_TOKEN
+          EOF
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+          cache: yarn
+
+      - run: yarn install --immutable
+      - run: yarn test --ci
