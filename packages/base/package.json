@@ -1,0 +1,22 @@
+{
+  "name": "@zioroboco/generator-base",
+  "version": "0.0.0",
+  "author": "Louis Quinnell <_@ziorobo.co>",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zioroboco/scaffolding.git",
+    "directory": "packages/base"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "generators",
+    "templates"
+  ],
+  "dependencies": {
+    "fast-glob": "^3.2.7",
+    "yeoman-generator": "^5.4.2"
+  }
+}
