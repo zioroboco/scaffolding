@@ -1,3 +1,4 @@
+import * as glob from "fast-glob"
 import Generator from "yeoman-generator"
 import { resolve } from "path"
 
@@ -7,10 +8,12 @@ export default class extends Generator {
   }
 
   writing() {
-    this.renderTemplate(
-      this.templatePath("dummyfile.txt.ejs"),
-      this.destinationPath("dummyfile.txt"),
-      { name: "dummyfile" }
-    )
+    glob.sync("**/*", { cwd: this.templatePath() }).forEach(file => {
+      this.fs.copyTpl(
+        this.templatePath(file),
+        this.destinationPath(file.replace(".ejs", "")),
+        { name: "my generator" }
+      )
+    })
   }
 }
